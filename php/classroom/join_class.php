@@ -120,7 +120,7 @@
         <div class="container">
             <figure class="logo">
                 <a href="../../index.php">
-                    <img src="" alt="Logo">
+                    <img src="../../images/icons/word_icon.svg" alt="Logo">
                 </a>
             </figure>
             <div class="copyright">
