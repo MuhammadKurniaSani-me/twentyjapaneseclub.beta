@@ -33,7 +33,7 @@ function linkToKanjiLevelPage() {
     cards.forEach(card => {
         card.addEventListener("click", ()=> {
             let cardId = card.id;
-            window.location.href = `../kanjis/${cardId}.html`;
+            window.location.href = `../kanjis/${cardId}.php`;
         });
     });
 }
