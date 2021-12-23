@@ -1,0 +1,414 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white-text);
+}
+
+li {
+    list-style: none;
+}
+
+section {
+    display: block;
+}
+
+.hidden {
+    display: none;
+
+    position: absolute;
+}
+
+/* Body */
+
+body {
+    --main-color: hsl(336, 100%, 58%);
+    --white-color: hsl(0, 0%, 100%); 
+    --white-text: var(--white-color);
+}
+
+#header-main-page {
+    position: fixed;
+    z-index: 5;
+
+    padding: 0.5rem;
+    width: 100%;
+
+    background-color: var(--main-color);
+
+    --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+        var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+/* Navigation Bar */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+
+    color: var(--white-text);
+
+    cursor: pointer;
+}
+
+/* Website Logo */
+
+.logo,
+.logo a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    height: 4rem;
+    margin: 0 1rem;
+}
+
+/* Navigation LInks */
+
+.navbar-links {
+    margin: 0 1rem;
+}
+
+.navbar-links ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-link {
+    padding: 0.5rem 0.75rem;
+    margin: 0 0.5rem;
+
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    border-radius: 1rem;
+    background-color: var(--white-text);
+    color: var(--main-color);
+}
+
+/* Hamburger Menu */
+
+.toggle-button {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 2rem;
+    height: 2rem;
+}
+
+.toggle-button .bar {
+    width: 100%;
+    height: 0.325rem;
+
+    border-radius: 1rem;
+
+    background-color: var(--white-text);
+}
+
+/* Hero */
+
+.hero {
+    background-image: url(../images/pictures/hero.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 22.5rem;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.hero h1 {
+    color: var(--main-color);
+    font-size: 2rem;
+    text-align: center;
+
+    padding: 1rem 1.5rem;
+    background-color: rgb(255, 255, 255);
+
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+/* Menus */
+
+.menus-container {
+    background-color: var(--white-color);
+    margin: 1rem auto;
+    padding: 2.25rem;
+}
+
+/* Coming Soon */
+
+.coming-soon {
+    height: 27.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.coming-soon img {
+    height: 7rem;
+}
+
+.card-container {
+    padding: 1rem;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Cards */
+
+.card {
+    aspect-ratio: 1 / 1;
+    height: 16rem;
+    margin: 1rem;
+
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    border-radius: 0.5rem;
+    box-shadow: 0 0.75rem 2rem hsla(0, 0%, 0%, 0.25);
+}
+
+.card article {
+    display: flex;
+}
+
+.title-card {
+    color: rgba(255, 255, 255, 1);
+}
+
+.description {
+    background-color: white;
+    height: 4rem;
+    padding: 0 0.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.description h2 {
+    margin: 0 1rem;
+    font-size: 1.05rem;
+    text-transform: capitalize;
+}
+
+/* Button */
+
+.button {
+    background-color: hsl(0, 100%, 58%);
+    aspect-ratio: 2 / 1;
+    height: 2.25rem;
+    border-radius: 0.5rem;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button:hover {
+    background-color: white;
+    color: hsl(0, 100%, 58%);
+    border: 0.2rem solid hsl(0, 100%, 58%);
+    padding: .5rem;
+}
+
+.button p {
+    text-transform: capitalize;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* Background Image for Lesson Cards */
+
+.lesson {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Hiragana Card Image */
+
+#hiragana {
+    background-image: url(../images/pictures/hiragana.svg);
+}
+
+.letter-box-container li:first-child {
+    display: none;
+}
+
+/* Kana Character */
+    
+.character-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.letter-box-container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+
+.letter-box {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--main-color);
+    color: var(--white-text);
+    padding: .4rem;
+    height: 7.5rem;
+    width: 6rem;
+    border-radius: .5rem;
+    transition: all 250ms;
+    overflow: hidden;
+}
+
+.letter-box:hover {
+    border: .2rem solid var(--main-color);
+    background-color: var(--white-color);
+    color: var(--main-color);
+}
+
+.letter {
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.kana-char {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.kana-char span {
+    font-size: 2.5rem;
+}
+
+/* Katakana Card Image */
+
+#katakana {
+    background-image: url(../images/pictures/katakana.svg);
+}
+
+#kanji {
+    background-image: url(../images/pictures/kanji.svg);
+}
+
+.self-card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.self-list {
+    display: flex;
+    padding: 2rem;
+    overflow-x: hidden;
+}
+
+.self {
+    display: flex;
+    position: relative;
+    flex-direction: column-reverse;
+    height: 17rem;
+    min-width: 12rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .15s;
+    box-shadow: 0 .5rem .75rem hsla(0, 0%, 0%, 0.3);
+}
+
+.self:first-child {
+    display: none;
+}
+
+.self-header {
+    background-color: var(--white-color);
+    border-radius: 0 0 1rem 1rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.self-header h2 {
+    font-size: 1.2rem;
+}
+
+.self:hover {
+    transform: translateY(-1rem);
+    box-shadow: 0 0 .75rem hsla(0, 0%, 0%, .4);
+}
+
+/* Classroom */
+#classroom {
+    background-image: url(../images/pictures/classroom.svg);
+}
+
+/* Footer */
+footer {
+    background-color: var(--main-color);
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1rem;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+#school {
+    text-transform: uppercase;
+    display: inline;
+}
+.copyright p {
+    color: var(--white-text);
+    text-transform: capitalize;
+    text-align: center;
+}
