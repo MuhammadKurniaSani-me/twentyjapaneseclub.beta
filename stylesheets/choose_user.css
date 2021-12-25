@@ -4,10 +4,15 @@
     padding: 0;
 }
 
+figure, img, figcaption {
+    display: block;
+}
+
 body {
     --main-color: hsl(336, 100%, 58%);
     --white-color: hsl(0, 0%, 100%); 
     --white-text: var(--white-color);
+    overflow-x: hidden;
 }
 
 .user_container {
@@ -24,8 +29,9 @@ body {
 
 .users {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     padding: 1rem;
 }
 
@@ -37,7 +43,7 @@ body {
 
     height: 17rem;
     width: 15rem;
-    margin: 2rem 0;
+    margin: 2rem;
     box-shadow: 0 .5rem .75rem hsla(0, 0%, 0%, 0.3);
     border-radius: 1rem;
 
@@ -49,13 +55,13 @@ body {
     box-shadow: 0 0 .75rem hsla(0, 0%, 0%, .4);
 }
 
-.user-section .user-description {
+.user-description {
     display: flex;
     align-items: center;
     justify-content: center;
 
     background-color: var(--main-color);
-    height: 4rem;
+    height: 3.5rem;
     width: 100%;
     border-radius: 0 0 1rem 1rem;
 }

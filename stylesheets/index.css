@@ -17,6 +17,10 @@ li {
     list-style: none;
 }
 
+figure, img, figcaption {
+    display: block;
+}
+
 section {
     display: block;
 }
