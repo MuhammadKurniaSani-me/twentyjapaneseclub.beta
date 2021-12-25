@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../stylesheets/index.css">
-    <link rel="stylesheet" href="../../stylesheets/responsive.css">
-    <link rel="stylesheet" href="../../stylesheets/sign_in.css">
-    <script src="../../javascripts/index.js" defer></script>
+    <link rel="stylesheet" href="../../../stylesheets/index.css">
+    <link rel="stylesheet" href="../../../stylesheets/responsive.css">
+    <link rel="stylesheet" href="../../../stylesheets/sign_in.css">
+    <script src="../../../javascripts/index.js" defer></script>
     <title>Sign In</title>
 </head>
 <body>
     <header id="header-main-page">
         <nav class="navbar">
             <figure class="logo">
-                <a href="../../index.php">
-                    <img src="../../images/icons/word_icon.svg" alt="Logo">
+                <a href="../../../index.php">
+                    <img src="../../../images/icons/word_icon.svg" alt="Logo">
                 </a>
             </figure>
             <div class="toggle-button">
@@ -26,10 +26,10 @@
             <div class="navbar-links">
                 <ul>
                     <li>
-                        <a class="nav-link" href="../../index.php">Home</a>
+                        <a class="nav-link" href="../../../index.php">Home</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="../about.php">About</a>
+                        <a class="nav-link" href="../../about.php">About</a>
                     </li>
                 </ul>
             </div>
@@ -39,15 +39,15 @@
     <main>
         <section class="hero">
             <h1>
-                Halo!
+                Halo! Pelajar!
                 <p>
-                    こんにちは!
+                    こんにちは！ 学生！
                 </p>
             </h1>
         </section>
         <section class="form sections">
-            <h1>Masuk</h1>
-            <p>Belum memiliki akun? <a id="sign-up" href="./sign_up.php">Daftar!</a></p>
+            <h1>Masuk Sebagai Pelajar</h1>
+            <p>Belum memiliki akun? <a id="sign-up" href="./student_sign_up.php">Daftar!</a></p>
             <form class="forms-container" name="form_sign_in" action="../classroom/class.php" method="POST" onsubmit="">
                 <div class="input-container">
                     <!-- Username -->
@@ -128,7 +128,7 @@
                     <div class="create-account-box">
                         <button id="create-account" type="submit">
                             <p>
-                                <img src="../../images/icons/Log in.svg" alt="Login" id="login-icon">
+                                <img src="../../../images/icons/Log in.svg" alt="Login" id="login-icon">
                                 Masuk!
                             </p>
                         </button>
@@ -136,7 +136,7 @@
                     <div class="google-login-box">
                         <button id="google-login" type="button">
                             <p>
-                                <img src="../../images/icons/Google_ G _Logo.svg" alt="Google" id="google-G-icon">
+                                <img src="../../../images/icons/Google_ G _Logo.svg" alt="Google" id="google-G-icon">
                                 Masuk dengan Google
                             </p>
                         </button>
@@ -149,8 +149,8 @@
     <footer>
         <div class="container">
             <figure class="logo">
-                <a href="../../index.php">
-                    <img src="../../images/icons/word_icon.svg" alt="Logo">
+                <a href="../../../index.php">
+                    <img src="../../../images/icons/word_icon.svg" alt="Logo">
                 </a>
             </figure>
             <div class="copyright">

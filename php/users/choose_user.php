@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../../stylesheets/responsive.css">
     <link rel="stylesheet" href="../../stylesheets/choose_user.css">
     <script src="../../javascripts/index.js" defer></script>
+    <script src="../../javascripts/choose_user.js" defer></script>
     <title>Sign In</title>
 </head>
 
