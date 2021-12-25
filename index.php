@@ -31,7 +31,7 @@
                         <a class="nav-link" href="./php/about.php">About</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="./php/account/sign_in.php">Login</a>
+                        <a class="nav-link" href="./php/users/choose_user.php">Login</a>
                     </li>
                 </ul>
             </div>

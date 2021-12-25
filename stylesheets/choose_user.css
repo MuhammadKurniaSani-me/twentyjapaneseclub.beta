@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    --main-color: hsl(336, 100%, 58%);
+    --white-color: hsl(0, 0%, 100%); 
+    --white-text: var(--white-color);
+}
+
+.user_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.user_container h1 {
+    font-size: 1.5rem;
+}
+
+.users {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.user-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    height: 17rem;
+    width: 15rem;
+    margin: 2rem 0;
+    box-shadow: 0 .5rem .75rem hsla(0, 0%, 0%, 0.3);
+    border-radius: 1rem;
+
+    cursor: pointer;
+    transition: .2s;
+}
+
+.user-section:hover {
+    box-shadow: 0 0 .75rem hsla(0, 0%, 0%, .4);
+}
+
+.user-section .user-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--main-color);
+    height: 4rem;
+    width: 100%;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.user-icon {
+    flex: 2;
+
+}
+
+.user-section .user-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#student .user-icon img,
+#teacher .user-icon img {
+    height: 11rem;
+}
+
+.user-type {
+    color: var(--white-text);
+}
