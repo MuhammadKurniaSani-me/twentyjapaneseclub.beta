@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../stylesheets/index.css">
     <link rel="stylesheet" href="../../../stylesheets/responsive.css">
-    <link rel="stylesheet" href="../../../stylesheets/sign_in.css">
+    <link rel="stylesheet" href="../../../stylesheets/student_sign_in.css">
     <script src="../../../javascripts/index.js" defer></script>
     <title>Sign In</title>
 </head>
