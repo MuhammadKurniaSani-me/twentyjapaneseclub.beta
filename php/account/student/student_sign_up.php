@@ -270,7 +270,7 @@
                     <div class="create-account-box">
                         <button id="create-account" type="submit">
                             <p>
-                                <img src="../../../images/icons/Log in.svg" alt="Login" id="login-icon">
+                                <img src="../../../images/icons/add_data.svg" alt="Login" id="login-icon">
                                 Daftar!
                             </p>
                         </button>
