@@ -20,7 +20,9 @@ body {
 .forms-container,
 .input-container,
 .username-container,
-.password-container {
+.teacher-agency-container,
+.password-container,
+.confirm-password-container {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -90,18 +92,24 @@ button[type="button"] {
 }
 
 .username-container,
-.password-container {
+.teacher-agency-container,
+.password-container,
+.confirm-password-container {
     height: 6.25rem;
     margin: 0.1rem 0;
 }
 
 #username:focus,
-#password:focus {
+#teacher-agency:focus,
+#password:focus,
+#confirm-password:focus {
     outline: 0.2rem solid var(--main-color);
 }
 
 #username,
-#password {
+#teacher-agency,
+#password,
+#confirm-password {
     margin: 0.1rem 0;
     padding: 0.3rem 0.75rem;
     width: 100%;
@@ -192,7 +200,8 @@ button p {
 }
 
 .empty-cheker,
-.invalid-cheker {
+.invalid-cheker,
+.wrong-password-cheker {
     margin: 0.15rem 0;
     position: absolute;
     display: block;
@@ -206,4 +215,8 @@ button p {
 
 .invalid-cheker {
     z-index: 2;
+}
+
+.wrong-password-cheker {
+    z-index: 3;
 }

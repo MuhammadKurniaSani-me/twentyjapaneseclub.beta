@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,10 @@
     <link rel="stylesheet" href="../../../stylesheets/responsive.css">
     <link rel="stylesheet" href="../../../stylesheets/teacher_sign_in.css">
     <script src="../../../javascripts/index.js" defer></script>
-    <title>Sign In</title>
+    <script src="../../../javascripts/dropdown.js" defer></script>
+    <title>Daftar</title>
 </head>
+
 <body>
     <header id="header-main-page">
         <nav class="navbar">
@@ -34,7 +37,7 @@
                 </ul>
             </div>
         </nav>
-    </header>    
+    </header>
 
     <main>
         <section class="hero">
@@ -48,7 +51,7 @@
         <section class="form sections">
             <h1>Masuk Sebagai Pengajar</h1>
             <p>Belum memiliki akun? <a id="sign-up" href="./teacher_sign_up.php">Daftar!</a></p>
-            <form class="forms-container" name="form_sign_in" action="../classroom/class.php" method="POST" onsubmit="">
+            <form class="forms-container" name="form_sign_up" action="./student_sign_in.php" method="POST" onsubmit="">
                 <div class="input-container">
                     <!-- Username -->
                     <div class="username-container">
@@ -58,7 +61,7 @@
                             </h4>
                         </div>
                         <div class="input-box">
-                            <input type="text" name="username" id="username" onkeypress="checkName()"; placeholder="Nama Lengkap" />
+                            <input type="text" name="username" id="username" onkeypress="checkName()" ; placeholder="Nama Lengkap" />
 
                             <!-- peringatan -->
                             <div class="validasi_data">
@@ -74,30 +77,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Instansi -->
-                    <div class="teacher-agency-container">
-                        <div class="label-container">
-                            <h4>
-                                <label for="student-agency">Intansi</label>
-                            </h4>
-                        </div>
-                        <div class="input-box">
-                            <input type="text" name="student-agency" id="student-agency" onkeypress="checkName()"; placeholder="Instansi/Universitas Pengajar" />
-
-                            <!-- peringatan -->
-                            <div class="validasi_data">
-                                <!-- peringatan pertama jika masukan nama kosong -->
-                                <div class="empty-cheker" id="emptyStudentAgency">
-                                    Nomor induk siswa tidak boleh kosong
-                                </div>
-
-                                <!-- peringatan kedua jika jumlah digit karakter kurang -->
-                                <div class="invalid-cheker" id="invalidStudentAgency">
-                                    Panjang karakter adalah 4 angka
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <!-- Password -->
                     <div class="password-container">
                         <div class="label-container">
@@ -106,8 +85,7 @@
                             </h4>
                         </div>
                         <div class="input-box">
-                            <input type="password" name="password" onkeypress="checkPassword()"; id="password"
-                                placeholder="Karakter dan Angka Acak" />
+                            <input type="password" name="password" onkeypress="checkPassword()" ; id="password" placeholder="Karakter dan Angka Acak" />
 
                             <!-- peringatan -->
                             <div class="validasi_data">
@@ -128,8 +106,8 @@
                     <div class="create-account-box">
                         <button id="create-account" type="submit">
                             <p>
-                                <img src="../../../images/icons/Log in.svg" alt="Login" id="login-icon">
-                                Masuk!
+                                <img src="../../../images/icons/add_data.svg" alt="Login" id="login-icon">
+                                Daftar!
                             </p>
                         </button>
                     </div>
@@ -137,7 +115,7 @@
                         <button id="google-login" type="button">
                             <p>
                                 <img src="../../../images/icons/Google_ G _Logo.svg" alt="Google" id="google-G-icon">
-                                Masuk dengan Google
+                                Daftar dengan Google
                             </p>
                         </button>
                     </div>
@@ -165,4 +143,5 @@
         </div>
     </footer>
 </body>
+
 </html>
