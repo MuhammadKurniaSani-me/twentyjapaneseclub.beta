@@ -26,16 +26,13 @@
             <div class="navbar-links">
                 <ul>
                     <li>
-                        <a class="nav-link" href="../../index.php">Home</a>
+                    <a class="nav-link" href="../classroom/student_room.php">Kelas</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="../about.php">About</a>
+                        <a class="nav-link" href="../about.php">Tentang</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="./class.php">Class Room</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="sign_out.php">Sign Out</a>
+                        <a class="nav-link" href="sign_out.php">Keluar</a>
                     </li>
                 </ul>
             </div>

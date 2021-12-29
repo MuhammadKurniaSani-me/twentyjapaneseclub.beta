@@ -25,13 +25,13 @@
             <div class="navbar-links">
                 <ul>
                     <li>
-                        <a class="nav-link" href="index.php">Home</a>
+                        <a class="nav-link" href="index.php">Beranda</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="./php/about.php">About</a>
+                        <a class="nav-link" href="./php/about.php">Tentang</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="./php/users/choose_user.php">Login</a>
+                        <a class="nav-link" href="./php/users/choose_user.php">Masuk</a>
                     </li>
                 </ul>
             </div>

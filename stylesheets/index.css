@@ -186,6 +186,7 @@ body {
     padding: 1rem;
 
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
@@ -389,6 +390,11 @@ body {
 /* Classroom */
 #classroom {
     background-image: url(../images/pictures/classroom.svg);
+}
+
+/* Quis */
+#quis-lesson {
+    background-image: url(../images/pictures/quis.svg);
 }
 
 /* Footer */

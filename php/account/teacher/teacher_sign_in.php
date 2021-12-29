@@ -29,10 +29,13 @@
             <div class="navbar-links">
                 <ul>
                     <li>
-                        <a class="nav-link" href="../../../index.php">Home</a>
+                        <a class="nav-link" href="../../../index.php">Beranda</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="../../about.php">About</a>
+                        <a class="nav-link" href="../../about.php">Tentang</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="../../users/choose_user.php">Akun</a>
                     </li>
                 </ul>
             </div>
@@ -51,7 +54,7 @@
         <section class="form sections">
             <h1>Masuk Sebagai Pengajar</h1>
             <p>Belum memiliki akun? <a id="sign-up" href="./teacher_sign_up.php">Daftar!</a></p>
-            <form class="forms-container" name="form_sign_up" action="./student_sign_in.php" method="POST" onsubmit="">
+            <form class="forms-container" name="form_sign_up" action="../../classroom/teacher_room.php" method="POST" onsubmit="">
                 <div class="input-container">
                     <!-- Username -->
                     <div class="username-container">
@@ -106,8 +109,8 @@
                     <div class="create-account-box">
                         <button id="create-account" type="submit">
                             <p>
-                                <img src="../../../images/icons/add_data.svg" alt="Login" id="login-icon">
-                                Daftar!
+                                <img src="../../../images/icons/log_in.svg" alt="Login" id="login-icon">
+                                Masuk!
                             </p>
                         </button>
                     </div>
