@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/icons/logo_icon.png" type="image/x-icon">
     <link rel="stylesheet" href="../../stylesheets/index.css">
     <link rel="stylesheet" href="../../stylesheets/responsive.css">
     <link rel="stylesheet" href="../../stylesheets/quis.css">
@@ -85,7 +86,7 @@
                     <h1 class="title-card hidden">sasas</h1>
                     <article class="description">
                         <h2>katakana</h2>
-                        <a href="../php/lessons/katakana.php" class="button">
+                        <a href="../lessons/katakana.php" class="button">
                             <p>pelajari</p>
                         </a>
                     </article>
@@ -95,7 +96,7 @@
                     <h1 class="title-card hidden">sasas</h1>
                     <article class="description">
                         <h2>Kanji</h2>
-                        <a href="../php/lessons/kanji.php" class="button">
+                        <a href="../lessons/kanji.php" class="button">
                             <p>pelajari</p>
                         </a>
                     </article>

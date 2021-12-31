@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../images/icons/logo_icon.png" type="image/x-icon">
     <link rel="stylesheet" href="../../stylesheets/index.css">
     <link rel="stylesheet" href="../../stylesheets/responsive.css">
     <script src="../../javascripts/katakana.js" defer></script>
@@ -47,14 +48,21 @@
         </section>
         <section class="character-container">
             <h1 class="hidden"></h1>
-            <ul class="letter-box-container">
-                <li>
-                    <article class="letter-box">
-                        <h2 class="letter"><span></span></h2>
-                        <p class="kana-char"><span></span></p>
-                    </article>
-                </li>
-            </ul>
+            <section class="katakana letter-container">
+                <h2 class="hidden"></h2>
+                <div class="title-container">
+                    <div class="title-bar"></div>
+                    <h3 class="katakana title-letter">Huruf</h3>
+                    <div class="title-bar"></div>
+                </div>
+                <ul class="letter-box-container">
+                    <li>
+                        <article class="letter-box">
+                            <h2 class="letter"><span>A</span></h2>
+                            <p class="kana-char"><span>あ</span></p>
+                        </article>
+                    </li>
+                </ul>
         </section>
     </main>
 
