@@ -1,4 +1,7 @@
-const hiragana_characters = [
+const hiraganaCharacters = [
+    {
+        characterName: "hiragana",
+    },
     {
         letter: "a",
         char: "あ",
@@ -205,23 +208,109 @@ const hiragana_characters = [
     },
 ];
 
-// card container
-const card = document.querySelector(".letter-box-container li");
+const hiraganaDakuonCharacters = [
+    {
+        characterName: "hiraganaDakuon",
+    },
+    {
+        letter: "ga",
+        char: "が",
+    },
+    {
+        letter: "gi",
+        char: "ぎ",
+    },
+    {
+        letter: "gu",
+        char: "ぐ",
+    },
+    {
+        letter: "ge",
+        char: "げ",
+    },
+    {
+        letter: "go",
+        char: "ご",
+    },
+    {
+        letter: "za",
+        char: "ざ",
+    },
+    {
+        letter: "ji",
+        char: "じ",
+    },
+    {
+        letter: "zu",
+        char: "ず",
+    },
+    {
+        letter: "ze",
+        char: "ぜ",
+    },
+    {
+        letter: "zo",
+        char: "ぞ",
+    },
+    {
+        letter: "da",
+        char: "だ",
+    },
+    {
+        letter: "ji",
+        char: "ぢ",
+    },
+    {
+        letter: "zu",
+        char: "づ",
+    },
+    {
+        letter: "de",
+        char: "で",
+    },
+    {
+        letter: "do",
+        char: "ど",
+    },
+    {
+        letter: "ba",
+        char: "ば",
+    },
+    {
+        letter: "bi",
+        char: "び",
+    },
+    {
+        letter: "bu",
+        char: "ぶ",
+    },
+    {
+        letter: "be",
+        char: "べ",
+    },
+    {
+        letter: "bo",
+        char: "ぼ",
+    }
+];
 
-function cloneCard(){
+function cloneCard(characterName, characterContainer){
+
+    // card container
+    const card = document.querySelector(`.${characterContainer} .letter-box-container li`);
     
-    for (let index = 0; index < hiragana_characters.length; index++) {
-        let name = hiragana_characters[index]["letter"];
-        let char = hiragana_characters[index]["char"];
+    for (let index = 1; index < characterName.length; index++) {
+        let name = characterName[index]["letter"];
+        let char = characterName[index]["char"];
 
         if (name == "empty" && char == "empty") {
-            document.querySelector(".letter span").textContent = "";
-            document.querySelector(".kana-char span").textContent = "";
+            document.querySelector(`.${characterContainer} .letter span`).textContent = "";
+            document.querySelector(`.${characterContainer} .kana-char span`).textContent = "";
             card.style.opacity = ".5";
             card.style.pointerEvents = "none";
         } else {
-            document.querySelector(".letter span").textContent = name;
-            document.querySelector(".kana-char span").textContent = char;
+            document.querySelector(`.${characterContainer} .letter span`).textContent = name;
+            document.querySelector(`.${characterContainer} .kana-char span`).textContent = char;
             card.style.opacity = "1";
             card.style.pointerEvents = "";
         }    
@@ -230,10 +319,14 @@ function cloneCard(){
         let clone = card.cloneNode(true);
 
         // Append cloned item
-        document.getElementsByClassName("letter-box-container")[0].appendChild(clone);
+        document.querySelector(`.${characterContainer}`).getElementsByClassName("letter-box-container")[0].appendChild(clone);
     }
-    console.log(card);
 }
 
 // Run Function
-cloneCard();
+
+// hiragana basic letter
+cloneCard(hiraganaCharacters, hiraganaCharacters[0]["characterName"]);
+
+// hiragana dakuon letter
+cloneCard(hiraganaDakuonCharacters, hiraganaDakuonCharacters[0]["characterName"]);

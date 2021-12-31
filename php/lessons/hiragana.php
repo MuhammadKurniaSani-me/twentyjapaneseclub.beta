@@ -48,24 +48,49 @@
                 </p>
             </h1>
         </section>
-        <section class="character-container">
-            <h1 class="hidden"></h1>
-            <section class="hiragana letter-container">
-                <h2 class="hidden"></h2>
-                <div class="title-container">
-                    <div class="title-bar"></div>
-                    <h3 class="hiragana title-letter">Huruf</h3>
-                    <div class="title-bar"></div>
-                </div>
-                <ul class="letter-box-container">
-                    <li>
-                        <article class="letter-box">
-                            <h2 class="letter"><span>A</span></h2>
-                            <p class="kana-char"><span>あ</span></p>
-                        </article>
-                    </li>
-                </ul>
-        </section>
+        <div class="section-wrap">
+            <section class="hiragana character-container">
+                <h1 class="hidden"></h1>
+                <section class="letter-container">
+                    <h2 class="hidden"></h2>
+                    <div class="title-container">
+                        <div class="title-bar"></div>
+                        <h3 class="title-letter">Huruf</h3>
+                        <div class="title-bar"></div>
+                    </div>
+                    <ul class="letter-box-container">
+                        <li>
+                            <article class="letter-box">
+                                <h2 class="letter"><span>A</span></h2>
+                                <p class="kana-char"><span>あ</span></p>
+                            </article>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+        </div>
+        <div class="section-wrap">
+            <section class="hiraganaDakuon character-container">
+                <h1 class="hidden"></h1>
+                <section class="letter-container">
+                    <h2 class="hidden"></h2>
+                    <div class="title-container">
+                        <div class="title-bar"></div>
+                        <h3 class="title-letter">Dakuon</h3>
+                        <div class="title-bar"></div>
+                    </div>
+                    <ul class="letter-box-container">
+                        <li>
+                            <article class="letter-box">
+                                <h2 class="letter"><span>A</span></h2>
+                                <p class="kana-char"><span>あ</span></p>
+                            </article>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+        </div>
+
     </main>
 
     <footer>

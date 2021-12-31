@@ -46,13 +46,13 @@
                 </p>
             </h1>
         </section>
-        <section class="character-container">
+        <section class="katakana character-container">
             <h1 class="hidden"></h1>
-            <section class="katakana letter-container">
+            <section class="letter-container">
                 <h2 class="hidden"></h2>
                 <div class="title-container">
                     <div class="title-bar"></div>
-                    <h3 class="katakana title-letter">Huruf</h3>
+                    <h3 class="title-letter">Huruf</h3>
                     <div class="title-bar"></div>
                 </div>
                 <ul class="letter-box-container">

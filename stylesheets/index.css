@@ -301,7 +301,8 @@ body {
 }
 
 .hiragana .title-letter,
-.katakana .title-letter {
+.katakana .title-letter,
+.hiraganaDakuon .title-letter {
     margin: 0;
     padding: 0;
     text-align: center;
