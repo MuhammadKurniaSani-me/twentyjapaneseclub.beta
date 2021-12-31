@@ -165,6 +165,12 @@
         padding: 2rem;
     }
 
+    .title-container {
+        height: 2rem;
+        margin: .5rem 0;
+        padding: .5rem 0;
+    }
+
     .letter-box-container {
         display: grid;
         gap: 1rem;
@@ -291,6 +297,16 @@
     .character-container {
         margin: 1rem 0;
         padding: 1rem 0.5rem;
+    }
+
+    .title-container {
+        margin: 0;
+        padding: .5rem 0;
+    }
+
+    .letter-box-container {
+        margin: 0;
+        padding: 1rem 0;
     }
 
     .letter-box {

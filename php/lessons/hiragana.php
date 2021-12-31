@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
     <script src="../../javascripts/hiragana.js" defer></script>
     <title>Hiragana</title>
 </head>
+
 <body>
     <header id="header-main-page">
         <nav class="navbar">
@@ -34,7 +36,7 @@
                 </ul>
             </div>
         </nav>
-    </header>    
+    </header>
 
     <main>
         <section class="hero">
@@ -47,15 +49,22 @@
         </section>
         <section class="character-container">
             <h1 class="hidden"></h1>
-            <ul class="letter-box-container">
-                <li>
-                    <article class="letter-box">
-                        <h2 class="letter"><span>A</span></h2>
-                        <p class="kana-char"><span>あ</span></p>
-                    </article>
-                </li>
-            </ul>
-        </section>
+            <section class="hiragana-letter-container">
+                <h2 class="hidden"></h2>
+                <div class="title-container">
+                    <div class="title-bar"></div>
+                    <h3 class="title-hiragana-letter">Huruf</h3>
+                    <div class="title-bar"></div>
+                </div>
+                <ul class="letter-box-container">
+                    <li>
+                        <article class="letter-box">
+                            <h2 class="letter"><span>A</span></h2>
+                            <p class="kana-char"><span>あ</span></p>
+                        </article>
+                    </li>
+                </ul>
+            </section>
     </main>
 
     <footer>
@@ -77,4 +86,5 @@
         </div>
     </footer>
 </body>
+
 </html>
