@@ -174,8 +174,6 @@
     .letter-box-container {
         display: grid;
         gap: 1rem;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(10, 1fr);
     }
 
     .letter-box {

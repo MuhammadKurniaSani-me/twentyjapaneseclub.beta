@@ -286,8 +286,7 @@ body {
 .letter-box-container {
     display: grid;
     gap: 2rem;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(10, 1fr);
+    height:min-content;
 }
 
 .title-container {
@@ -302,8 +301,11 @@ body {
 
 .hiragana .title-letter,
 .katakana .title-letter,
-.hiraganaDakuon .title-letter {
-    margin: 0;
+.hiraganaDakuon .title-letter,
+.hiraganaHanDakuon .title-letter,
+.hiraganaCombo .title-letter,
+.hiraganaSmallTsu .title-letter {
+    margin: 0 1rem;
     padding: 0;
     text-align: center;
     color: var(--main-color);
@@ -339,6 +341,7 @@ body {
     border: .2rem solid var(--main-color);
     background-color: var(--white-color);
     color: var(--main-color);
+    cursor: pointer;
 }
 
 .letter {
