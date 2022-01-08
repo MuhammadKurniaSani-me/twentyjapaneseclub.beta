@@ -35,7 +35,7 @@ section {
 
 body {
     --main-color: hsl(336, 100%, 58%);
-    --white-color: hsl(0, 0%, 100%); 
+    --white-color: hsl(0, 0%, 100%);
     --white-text: var(--white-color);
 }
 
@@ -270,94 +270,100 @@ body {
     background-image: url(../images/pictures/hiragana.svg);
 }
 
-.letter-box-container li:first-child {
-    display: none;
+/* Kana Character */
+
+.wrapper {
+    margin-bottom: 1rem;
+    padding: 1rem 0;
 }
 
-/* Kana Character */
-    
-.character-container {
+.letter-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1024px;
+    padding: 1rem;
+    margin: 1rem auto;
+}
+
+.title-letter-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
+    margin-bottom: 1.5rem;
 }
 
-.letter-box-container {
-    display: grid;
-    gap: 2rem;
-    height:min-content;
-}
-
-.title-container {
-    width: 100%;
-    height: 2rem;
-    margin: 1rem 0;
-    padding: 1rem 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.hiragana .title-letter,
-.katakana .title-letter,
-.hiraganaDakuon .title-letter,
-.hiraganaHanDakuon .title-letter,
-.hiraganaCombo .title-letter,
-.hiraganaSmallTsu .title-letter {
+.title-letter {
+    display: block;
+    width: max-content;
     margin: 0 1rem;
-    padding: 0;
-    text-align: center;
-    color: var(--main-color);
+
     font-size: 1.5rem;
-    flex: 1;
-    display: inline-block;
+    color: var(--main-color);
+    text-align: center;
 }
 
 .title-bar {
-    background-color: var(--main-color);
-    width: 100%;
-    flex: 1;
-    height: .2rem;
     display: inline-block;
-}
-
-.letter-box {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: space-evenly;
+    flex: .5;
+    height: .2rem;
     background-color: var(--main-color);
+}
+
+.letter-card-container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    margin-top: 1rem;
+}
+
+.letter-card {
+    height: max-content;
+    min-height: 6rem;
+    min-width: fit-content;
+    padding: .5rem .3rem;
     color: var(--white-text);
-    padding: .4rem;
-    height: 7.5rem;
-    width: 6rem;
-    border-radius: .5rem;
-    transition: all 250ms;
-    overflow: hidden;
+    background-color: var(--main-color);
+    border: .25rem solid var(--main-color);
+    border-radius: .25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 150ms;
 }
 
-.letter-box:hover {
-    border: .2rem solid var(--main-color);
+.letter-card:hover {
     background-color: var(--white-color);
-    color: var(--main-color);
     cursor: pointer;
+    color: var(--main-color);
 }
 
+.kana-char,
 .letter {
-    text-transform: capitalize;
-    font-weight: 600;
+    width: max-content;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
 }
 
 .kana-char {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+    font-size: 1.5rem;
 }
 
-.kana-char span {
-    font-size: 2.5rem;
+.letter {
+    margin-top: .5rem;
+    font-size: 1.25rem;
+    text-transform: capitalize;
+}
+
+.letter-card-container li:first-child {
+    display: none;
+}
+
+.letter-container .wrapper:last-child {
+    display: none;
 }
 
 /* Katakana Card Image */
