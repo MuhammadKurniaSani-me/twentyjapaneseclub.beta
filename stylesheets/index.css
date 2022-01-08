@@ -355,7 +355,6 @@ body {
 .letter {
     margin-top: .5rem;
     font-size: 1.25rem;
-    text-transform: capitalize;
 }
 
 .letter-card-container li:first-child {

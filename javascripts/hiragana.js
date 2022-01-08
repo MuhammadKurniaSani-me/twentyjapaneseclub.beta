@@ -499,7 +499,7 @@ const hiraganaCharacters = [
         {
             characterName: "Vokal Panjang",
             id: "hiraganaLongVowel",
-            numberOfVowel: 5,
+            numberOfVowel: 3,
         },
         {
             letter: "aa",
@@ -514,20 +514,16 @@ const hiraganaCharacters = [
             char: "うう",
         },
         {
+            letter: "empty",
+            char: "empty",
+        },
+        {
             letter: "ee",
             char: "ええ",
         },
         {
             letter: "oo",
             char: "おお",
-        },
-        {
-            letter: "empty",
-            char: "empty",
-        },
-        {
-            letter: "empty",
-            char: "empty",
         },
         {
             letter: "empty",
@@ -696,3 +692,6 @@ countNumberOfVowel("hiraganaCombo", 3)
 
 // section of hiraganaCombo
 countNumberOfVowel("hiraganaSmallTsu", 4)
+
+// section of hiraganaLongVowel
+countNumberOfVowel("hiraganaLongVowel", 3);
