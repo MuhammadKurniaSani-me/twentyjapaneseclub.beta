@@ -46,6 +46,7 @@
                 </p>
             </h1>
         </section>
+
         <section class="self-card-container">
             <h1 class="hidden"></h1>
             <ul class="self-list">

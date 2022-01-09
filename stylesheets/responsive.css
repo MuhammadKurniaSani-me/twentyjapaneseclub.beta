@@ -1,9 +1,5 @@
 /* For device with screen under 1024px */
 @media all and (max-width: 1280px) {
-    /* Kanji Level */
-    .self-list {
-        overflow-x: scroll;
-    }
 }
 
 /* For device with screen under 1024px */
