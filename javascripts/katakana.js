@@ -302,23 +302,23 @@ const katakanaCharacters = [
         },
         {
             letter: "pa",
-            char: "ぱ",
+            char: "パ",
         },
         {
             letter: "pi",
-            char: "ぴ",
+            char: "ピ",
         },
         {
             letter: "pu",
-            char: "ぷ",
+            char: "プ",
         },
         {
             letter: "pe",
-            char: "ぺ",
+            char: "ペ",
         },
         {
             letter: "po",
-            char: "ぽ",
+            char: "ポ",
         },
     ],
     [
@@ -474,25 +474,25 @@ const katakanaCharacters = [
     ],
     [
         {
-            characterName: "っ Kecil",
+            characterName: "ッ Kecil",
             id: "katakanaSmallTsu",
             numberOfVowel: 4,
         },
         {
             letter: "kk",
-            char: "っ+k",
+            char: "ッ+k",
         },
         {
             letter: "ss",
-            char: "っ+s",
+            char: "ッ+s",
         },
         {
             letter: "tt",
-            char: "っ+t",
+            char: "ッ+t",
         },
         {
             letter: "pp",
-            char: "っ+p",
+            char: "ッ+p",
         },
     ],
     [
